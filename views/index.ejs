@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <title>javascript refactor</title>
+    <link rel='stylesheet' href='stylesheets/style.css' />
+    <!-- custome css -->
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+    <div class="container">
+      <div id="roller">
+        <div class="center">
+          <button class="add" type="button" name="button">Add dice</button>
+          <button class="roll" type="button" name="button">Roll dice</button>
+        </div>
+        <div class="center" id="dice-content">
+          <div class="dice"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- custome javascript -->
+    <script src="javascripts/index.js" charset="utf-8"></script>
   </body>
 </html>
